@@ -1,11 +1,14 @@
-
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/foundation.dart';
+
 class ApiUtils {
   static const String _port = '3000';
-  static const String? _urlProduction = null;
-  static const String _baseUrl = _urlProduction ?? 'http://localhost:$_port/api';
-  static const String _emuladorUrl = _urlProduction ?? 'http://10.0.2.2:$_port/api';
+  static const String _urlProduction =
+      'https://oficina-978955827329.us-central1.run.app/api';
+  static const String _baseUrl =
+      _urlProduction ?? 'http://localhost:$_port/api';
+  static const String _emuladorUrl =
+      _urlProduction ?? 'http://10.0.2.2:$_port/api';
 
   static Future<String> get baseUrl async {
     if (kIsWeb) {
