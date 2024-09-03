@@ -127,7 +127,7 @@ class _ContactDetailState extends State<ContactDetail> {
     return Card(
       margin: const EdgeInsets.symmetric(
         vertical: 8.0,
-        horizontal: 50,
+        horizontal: 15,
       ),
       child: ListTile(
         contentPadding: const EdgeInsets.symmetric(
